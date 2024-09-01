@@ -1,0 +1,28 @@
+npx create-react-app ecomm-dashboard
+cd ecomm-dashboard
+code .
+npm start
+
+https://react-bootstrap.netlify.app/
+get started
+npm install react-bootstrap bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+npm install react-router-dom
+
+composer create-project --prefer-dist laravel/laravel ecomm-backend "10.*"
+php artisan make:controller UserController
+php artisan migrate
+php artisan serve
+php artisan make:controller ProductController
+php artisan make:Model Product
+
+php artisan storage:link
+change config/filesystem.php 
+ 'links' => [
+        public_path('storage') => storage_path('app/public'),
+    ],
+To
+
+ 'links' => [
+        public_path('products') => storage_path('app/products'),
+    ],
